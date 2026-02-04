@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For Ella 💖</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: linear-gradient(135deg, #ff758c, #ff7eb3);
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+    }
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 18px;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+      max-width: 340px;
+      text-align: center;
+    }
+    h1 {
+      color: #e60073;
+      margin-bottom: 10px;
+    }
+    p {
+      color: #444;
+      font-size: 15px;
+      line-height: 1.5;
+    }
+    button {
+      padding: 12px 24px;
+      margin: 12px 8px 0;
+      border: none;
+      border-radius: 25px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .yes {
+      background: #ff4d88;
+      color: white;
+    }
+    .no {
+      background: #eee;
+    }
+  </style>
+</head>
+<body>
+
+<div class="card" id="card">
+  <h1>Ella 💕</h1>
+  <p>
+    I love you from the deepest part of my heart.<br>
+    Let’s make special memories on the 14th of February. 💖
+  </p>
+  <p><strong>Will you be my Valentine?</strong></p>
+
+  <button class="yes" onclick="yesClick()">Yes 💘</button>
+  <button class="no" onclick="noClick()">No 🙈</button>
+</div>
+
+<script>
+  function yesClick() {
+    document.getElementById("card").innerHTML =
+      "<h1>Yayyy 💖🥰</h1>" +
+      "<p>You just made my heart smile, Ella.</p>" +
+      "<p>Happy Valentine’s Day 💐</p>" +
+      "<p><strong>— Zeal</strong></p>";
+  }
+
+  function noClick() {
+    document.getElementById("card").innerHTML =
+      "<h1>That’s okay 🌷</h1>" +
+      "<p>You’re still appreciated and wished a beautiful Valentine.</p>" +
+      "<p><strong>— Zeal</strong></p>";
+  }
+</script>
+
+</body>
+</html>
